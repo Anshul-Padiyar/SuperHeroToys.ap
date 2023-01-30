@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SuperHeroToys.ap</title>
+  <link rel="icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="sec">
+    <header>
+      <a href="#"><img src="images/logo.png" class="logo"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Comics</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>Funko Fair 2023:</h2>
+        <h5> Zombie Iron Man, and More Arrive</h5>
+        <p>
+          Come one, come all, Funko Fair 2023 has kicked off and is in full swing! For three full weeks, Funko is
+          rolling out brand-new figures — both big and small, keychains, plushes, moments, nesting Pops! and more — and
+          Marvel heroes and characters are featured heavily in the mix. If you love it and want to celebrate it, there's
+          a Marvel Universe Pop to add to your shelf.
+        </p>
+        <a href="#">View All Products</a>
+      </div>
+      <div class="imgBox">
+        <img src="images/Deadpool.png" class="toy">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li>
+        <img src="images/Deadpool.png" onclick="imgSlider('images/Deadpool.png');changeBgcolor('#8B2323')">
+      </li>
+      <li>
+        <img src="images/Batman.png" onclick="imgSlider('images/Batman.png');changeBgcolor('#020201')">
+      </li>
+      <li>
+        <img src="images/Spidy.png" onclick="imgSlider('images/Spidy.png');changeBgcolor('#0a2b4e')">
+      </li>
+    </ul>
+    <ul class="links">
+      <li>
+        <a href="#"><img src="images/facebook.png"></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/twitter.png"></a>
+      </li>
+      <li>
+        <a href="#"><img src="images/instagram.png"></a>
+      </li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector(".toy").src = anything;
+    }
+    function changeBgcolor(color) {
+      const sec = document.querySelector(".sec");
+      sec.style.background = color;
+    }
+  </script>
+</body>
+
+</html>
